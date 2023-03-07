@@ -21,3 +21,7 @@ It helps writing commit message with [`git-cz` CLI](https://github.com/streamich
 ### `format`
 
 It formats codebase with [Prettier](https://prettier.io/).
+
+### `lint`
+
+It lints codebase with [ESLint](https://eslint.org/).
