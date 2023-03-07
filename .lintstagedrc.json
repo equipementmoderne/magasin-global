@@ -1,3 +1,4 @@
 {
-  "*.{(t|j)s?(x),json,html,md}": "npm run format"
+  "*.{(t|j)s?(x),json,html,md}": "npm run format",
+  "package.json": "npx sort-package-json"
 }
