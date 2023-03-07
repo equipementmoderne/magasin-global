@@ -13,3 +13,7 @@ It builds for production.
 ### `preview`
 
 It locally previews production build.
+
+### `commit`
+
+It helps writing commit message with [`git-cz` CLI](https://github.com/streamich/git-cz).
