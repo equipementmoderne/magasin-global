@@ -16,4 +16,8 @@ It locally previews production build.
 
 ### `commit`
 
-It helps writing commit message with [`git-cz` CLI](https://github.com/streamich/git-cz).
+It helps writing commit message with [`git-cz` CLI](https://github.com/streamich/git-cz). Thanks to [Commit Lint](https://commitlint.js.org/) it respects [Conventional Changelog Specifications](https://www.conventionalcommits.org/).
+
+### `format`
+
+It formats codebase with [Prettier](https://prettier.io/).
