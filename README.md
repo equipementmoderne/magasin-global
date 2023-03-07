@@ -25,3 +25,11 @@ It formats codebase with [Prettier](https://prettier.io/).
 ### `lint`
 
 It lints codebase with [ESLint](https://eslint.org/).
+
+### `test`
+
+It run tests suite with [Vitest](https://vitest.dev/).
+
+### `coverage`
+
+It provides coverage reports on http://localhost:8080.
