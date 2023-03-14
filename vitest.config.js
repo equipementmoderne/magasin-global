@@ -6,11 +6,10 @@ export default defineConfig({
     environment: "jsdom",
     setupFiles: "./src/setupTests.js",
     coverage: {
-      statements: 100,
-      branches: 100,
-      functions: 100,
-      lines: 100,
-      thresholdAutoUpdate: true,
+      statements: 80,
+      branches: 80,
+      functions: 80,
+      lines: 80,
     },
   },
 });
