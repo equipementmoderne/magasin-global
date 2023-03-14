@@ -36,6 +36,9 @@ jobs:
         run: npm ci
       - name: Build app
         run: npm run build
+      - uses: actions/upload-artifact@v3
+        with:
+          path: dist/
 
   deploy:
     needs: build
@@ -54,3 +57,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: npx semantic-release
+      - uses: actions/download-artifact@v3
+        with:
+          path: dist/
+      - name: Upload
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_MAGASIN_GLOBAL }}"
+          channelId: live
+          projectId: magasin-global
